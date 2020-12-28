@@ -48,7 +48,7 @@ Creates an interval span from `start` (inclusive) to `end` (exclusive) and attac
 ##### API
 
 ```typescript
-new IntervalSpan(start: number, end: number, metadata?: Record<string, any>);
+new IntervalSpan<MetadataShape = Record<string, any>>(start: number, end: number, metadata?: MetadataShape);
 ```
 
 ##### Example
@@ -56,7 +56,7 @@ new IntervalSpan(start: number, end: number, metadata?: Record<string, any>);
 ```typescript
 import { IntervalSpan } from 'interval-span';
 
-const singleDigitIntegerSpan = new IntervalSpan(0, 10, {
+const singleDigitIntegerSpan = new IntervalSpan<{ name: string }>(0, 10, {
   name: 'single-digits',
 });
 ```
@@ -108,7 +108,7 @@ instance.getSpanByNumber(numberToTest: number): IntervalSpan | null;
 ##### Example
 
 ```typescript
-const intervalSpans = new IntervalSpans([
+const intervalSpans = new IntervalSpans<{ name: string }>([
   new IntervalSpan(0, 10, { name: 'single-digits' }),
   new IntervalSpan(10, 20, { name: 'ten-to-twenty' }),
 ]);

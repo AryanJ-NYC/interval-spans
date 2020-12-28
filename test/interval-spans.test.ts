@@ -2,7 +2,7 @@ import { IntervalSpan, IntervalSpans } from '../src';
 
 describe('IntervalSpan', () => {
   test('includes', () => {
-    const intervalSpan = new IntervalSpan(0, 10);
+    const intervalSpan = new IntervalSpan<{ someProperty: number }>(0, 10, { someProperty: 3 });
     expect(intervalSpan.includes(0)).toBe(true);
     expect(intervalSpan.includes(10)).toBe(false);
   });
@@ -10,7 +10,7 @@ describe('IntervalSpan', () => {
 
 describe('IntervalSpans', () => {
   test('getSpanByNumber', () => {
-    const intervalSpans = new IntervalSpans([
+    const intervalSpans = new IntervalSpans<{ name: string }>([
       new IntervalSpan(0, 10, { name: 'single-digits' }),
       new IntervalSpan(10, 20, { name: 'ten-to-twenty' }),
     ]);
