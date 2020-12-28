@@ -26,7 +26,7 @@ Easily create interval spans, look up to which interval span a number belongs to
                * [Example](#example-3)
       * [License](#license)
 
-<!-- Added by: runner, at: Mon Dec 28 02:29:31 UTC 2020 -->
+<!-- Added by: runner, at: Mon Dec 28 03:25:35 UTC 2020 -->
 
 <!--te-->
 
