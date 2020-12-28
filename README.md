@@ -7,6 +7,28 @@ For when you need to create [interval spans](<https://en.wikipedia.org/wiki/Inte
 Easily create interval spans, look up to which interval span a number belongs to (if any) and attach metadata to your interval spans.
 
 <!--ts-->
+
+- [Interval Spans](#interval-spans)
+  - [Installation](#installation)
+  - [Usage](#usage)
+    - [Interval Span](#interval-span)
+      - [Constructor](#constructor)
+        - [API](#api)
+        - [Example](#example)
+      - [Includes](#includes)
+        - [API](#api-1)
+        - [Example](#example-1)
+    - [Interval Spans](#interval-spans-1)
+      - [Constructor](#constructor-1)
+        - [API](#api-2)
+        - [Example](#example-2)
+      - [Get Span by Number](#get-span-by-number)
+        - [API](#api-3)
+        - [Example](#example-3)
+  - [License](#license)
+
+<!-- Added by: aryanjabbari, at: Sun Dec 27 21:28:45 EST 2020 -->
+
 <!--te-->
 
 ## Installation
